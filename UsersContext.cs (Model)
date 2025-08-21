@@ -1,0 +1,10 @@
+namespace DataAnnotation.Models
+{
+    public class UsersContext : DbContext
+    {
+        public UsersContext() : base("DefaultConnection")
+        {
+        }
+        public DbSet<StudentModel> StudentDbSet { get; set; }
+    }
+}
